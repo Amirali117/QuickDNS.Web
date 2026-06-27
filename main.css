@@ -1,0 +1,268 @@
+/* =========================
+   RESET
+========================= */
+@font-face{
+    font-family:"Xolonium";
+
+    src:url("fonts/Xolonium-Regular.ttf");
+
+    font-display:swap;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header{
+    position:fixed;
+    top:20px;
+    left:20px;
+    z-index:100;
+}
+
+header h1{
+    font-family:"Xolonium", Arial Black, sans-serif;
+    font-size:76px;
+    color:#16c6cf;
+    letter-spacing:3px;
+    user-select:none;
+}
+
+/* =========================
+   MAIN
+========================= */
+
+.container{
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    gap:90px;
+
+    padding:120px 20px 90px;
+}
+
+.logo{
+    width:280px;
+    max-width:100%;
+    user-select:none;
+}
+
+.download-btn{
+
+    background:#16c6cf;
+
+    color:#000;
+
+    text-decoration:none;
+
+    padding:18px 45px;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    letter-spacing:3px;
+
+    transition:.25s;
+
+    display:inline-block;
+}
+
+.download-btn:hover{
+
+    background:#11dce6;
+
+    transform:scale(1.05);
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    position:fixed;
+
+    left:0;
+    bottom:0;
+
+    width:100%;
+
+    background:#16c6cf;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 30px;
+}
+
+.copyright{
+
+    color:#fff;
+
+    font-size:14px;
+
+    font-weight:bold;
+}
+
+.footer-links{
+
+    display:flex;
+
+    gap:25px;
+}
+
+.footer-links a{
+
+    color:#fff !important;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.2s;
+}
+
+.footer-links a:hover{
+
+    opacity:.7;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width:900px){
+
+header h1{
+
+    font-size:52px;
+
+}
+
+.container{
+
+    gap:50px;
+}
+
+.logo{
+
+    width:220px;
+}
+
+.download-btn{
+
+    font-size:30px;
+}
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:600px){
+
+header{
+
+    top:15px;
+    left:15px;
+}
+
+header h1{
+
+    font-family:"Xolonium", Arial Black, sans-serif;
+
+    font-size:34px;
+
+    letter-spacing:2px;
+}
+
+.container{
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    gap:35px;
+
+    padding-top:90px;
+
+    padding-bottom:100px;
+
+    text-align:center;
+}
+
+.logo{
+
+    width:170px;
+}
+
+.download-btn{
+
+    width:85%;
+
+    max-width:300px;
+
+    text-align:center;
+
+    font-size:24px;
+
+    padding:16px 0;
+}
+
+footer{
+
+    flex-direction:column;
+
+    gap:8px;
+
+    padding:12px;
+}
+
+.copyright{
+
+    font-size:11px;
+
+    text-align:center;
+}
+
+.footer-links{
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+.footer-links a{
+
+    font-size:12px;
+}
+
+}
